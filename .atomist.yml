@@ -1,0 +1,77 @@
+---
+kind: "operation"
+client: "rug-cli 0.17.1"
+editor:
+  name: "mygroup.travis-editors.EnableTravisForRugArchiveDSL"
+  group: "mygroup"
+  artifact: "travis-editors"
+  version: "0.4.0"
+  origin:
+    repo: "mygroup/travis-editors.git"
+    branch: "master"
+    sha: "ffa56d6"
+  parameters:
+    - "repo_slug": "mygroup/newprojet"
+    - "org": ".org"
+    - "github_token": "4**************************************b"
+    - "maven_base_url": "https://atomist.jfrog.io/atomist"
+    - "maven_user": "t************h"
+    - "maven_token": "A***********************************************************************i"
+
+---
+kind: "operation"
+client: "rug-cli 0.19.1"
+editor:
+  name: "UpgradeFrom0_7_1"
+  group: "mygroup"
+  artifact: "rug-upgrade"
+  version: "0.1.0"
+  origin:
+    repo: "mygroup/rug-upgrade"
+    branch: "master"
+    sha: "e556ba9*"
+
+---
+kind: "operation"
+client: "rug-cli 0.21.0-SNAPSHOT"
+executor:
+  name: "UpdateRugVersion"
+  group: "atomisthqa"
+  artifact: "mygroup"
+  version: "0.2.5"
+  origin:
+    repo: "n/a"
+    branch: "n/a"
+    sha: "n/a"
+
+---
+kind: "operation"
+client: "rug-cli 0.21.0-SNAPSHOT"
+executor:
+  name: "UpdateRugVersion"
+  group: "atomisthqa"
+  artifact: "mygroup"
+  version: "0.2.5"
+  origin:
+    repo: "n/a"
+    branch: "n/a"
+    sha: "n/a"
+
+---
+kind: "operation"
+client: "atomist 1.2"
+generator:
+  name: "NewRugArchiveProject"
+  group: "atomist-rugs"
+  artifact: "rug-archive"
+  version: "0.4.1"
+  origin:
+    repo: "https://github.com/atomist-rugs/rug-archive.git"
+    branch: "a5eadd8cb08eb83d5569bf81c49e1b2249c78299"
+    sha: "a5eadd8"
+  parameters:
+    - "project_name": "newprojet"
+    - "group_id": "mygroup"
+    - "version": "0.1.0"
+    - "description": "My new project"
+

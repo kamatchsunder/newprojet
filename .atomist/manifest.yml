@@ -1,0 +1,14 @@
+---
+group: "mygroup"
+artifact: "newprojet"
+version: "0.1.0"
+
+requires: "[0.10.0,1.0.0)"
+
+dependencies:
+  - "mygroup:common-editors:0.6.0"
+
+---
+repo: "https://github.com/mygroup/newprojet.git"
+branch: "a5eadd8cb08eb83d5569bf81c49e1b2249c78299"
+sha: "a5eadd8"
